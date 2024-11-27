@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-7 bg-teal-600 text-white rounded py-2 font-bold;
+    @apply hover:opacity-80;
+  }
+  .btn-primary-dark {
+    @apply px-7 bg-primary-500 text-white rounded py-2 font-bold;
+    @apply hover:opacity-80;
+  }
+}
+
+.hero {
+  background: url("../images/hero.png") no-repeat center right / 600px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #bb86fc;
+  border-color: #bb86fc;
+  color: #f1f1f1;
+}
+
+body.dark-mode input {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode footer {
+  background-color: #121212;
+}
+
+body.dark-mode .text-primary-500 {
+  color: #bb86fc;
+}
+
+body.dark-mode .bg-primary-500 {
+  background-color: #bb86fc;
+}
+
+body.dark-mode .bg-primary-200 {
+  background-color: #333;
+}
+
+body.dark-mode main {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .bg-white {
+  background-color: #121212;
+}
+
+body.dark-mode .text-gray-500 {
+  color: #e2e8f0;
+}
+
+body.dark-mode .text-gray-900 {
+  color: #f7fafc;
+}
+
+main .py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card .icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #2d3748;
+  color: #fff;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.card p {
+  color: #718096;
+  margin-top: 1rem;
+}
+
+section .space-y-12 {
+  margin-bottom: 3rem;
+}
+
+section .space-y-12 h4,
+section .space-y-12 h2,
+section .space-y-12 p {
+  color: #4a5568;
+}
+
+section .space-y-12 ul {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+section .space-y-12 li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+section .space-y-12 .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #3182ce;
+  color: white;
+  border-radius: 9999px;
+  margin-right: 1rem;
+}
+
+section .space-y-12 .icon.yellow {
+  background-color: #ecc94b;
+}
+
+section .space-y-12 .icon.red {
+  background-color: #f56565;
+}
+
+section .space-y-12 .icon.blue {
+  background-color: #3182ce;
+}
